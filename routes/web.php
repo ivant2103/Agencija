@@ -48,7 +48,7 @@ Route::get('/mojerezervacije', [RezervacijaController::class, 'mojerez'])->middl
 //Brisanje rezervacije
 Route::get('/mojerezervacije/{id}', [RezervacijaController::class, 'delete'])->middleware('auth');
 
-
+URL::forceRootUrl('https://studenti.sum.ba/projekti/fsre_rwa/2020/g19');
 Route::get('/', function () {
     return view('stranice.pocetna');
 });
